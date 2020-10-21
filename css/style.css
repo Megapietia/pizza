@@ -34,6 +34,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-top: 30px;
 }
 
 .menu_logo{
@@ -281,7 +282,7 @@
     background: black;
 }
 
-.footer_contant{
+.footer_content{
     max-width: 1110px;
     margin: 50px  auto;
     display: flex;
@@ -300,6 +301,11 @@
     font-family: var(--m400);
     font-weight: 400;
 }
+
+/* .footer_content>.menu{
+    margin-top: 48px;
+} */
+
 @media(max-width: 1024px){
     .section_content{
         flex-direction: column;
