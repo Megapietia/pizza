@@ -15,7 +15,7 @@
 
 .header{
     width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     min-height: 768px;
     background: url(../img/header_bg.png) no-repeat;
     background-size: cover;
@@ -23,14 +23,14 @@
 
 .container{
     max-width: 1140px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 0 auto;
-    padding: 0 15;
+    padding: 0 15px;
 }
 
 .menu{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -68,7 +68,7 @@
 
 .container_content{
     max-width: 1140px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     font-size: 18px;
     font-family: var(--m800);
@@ -92,7 +92,7 @@
     margin-top: 40px;
 }
 
-.container_content a{
+.container_content a, .pizza_cost a{
     background: linear-gradient(0deg, #05a300, #46f819);
     padding: 20px 42px 20px 42px;
     font-size: 16px;
@@ -110,17 +110,17 @@
 
 .section_content{
     max-width: 1110px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin: 95px  auto;
     display: flex;
 }
 
 .content_logo{
-    border: 1px solid red;  
+    /* border: 1px solid red;   */
 }
 
 .content_info{
-    border: 1px solid green; 
+    /* border: 1px solid green;  */
     font-size: 18px;
     color: #bdbdbd;
     font-family: var(--m400);
@@ -154,22 +154,222 @@
     margin: 0px 0px -60px 100px;
 }
 
+.main_menu{
+    max-width: 1110px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+
+.pizza_info{
+    display: flex;
+    max-width: 735px;
+    /* border: 1px solid saddlebrown; */
+    position: relative;
+}
+
+.pizza_info-inside{
+    max-width: 320px;
+    display: flex;
+    /* border: 1px solid green; */
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.pizza_info-inside h2{
+    color: #a6a6a6;
+    font-size: 30px;
+    font-family: var(--m800);
+    font-weight: 800;
+    margin: 20px 0 20px 0;
+}
+.pizza_info-inside p{
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: var(--m400);
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.pizza_info span{
+    position: absolute;
+    text-align: center;
+    height: 3em;
+    width: 3em;
+    line-height: 3em; 
+    background: #46f819;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: var(--m800);
+    font-weight: 800;
+    margin: 30px 0 0 30px;
+}
+.pizza_cost{
+    font-size: 30px;
+    font-family: var(--m800);
+    font-weight: 800;
+    color: #a6a6a6;
+    /* border: 1px solid gray; */
+    padding-top: 35px;
+}
+
+.pizza_cost a{
+    padding: 20px 32px 20px 32px;
+    margin-top: 32px;
+    line-height: 12px;
+}
+
+.pizza_cost p span{
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: var(--m400);
+    font-weight: 400;
+}
+
+
+.menu_intro{
+    max-width: 1110px;
+    font-size: 36px;
+    color: rgb(105, 208, 22, 0.3);
+    font-family: var(--m800);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.feedback{
+    margin: 150px 0 100px 0;
+    max-width: 1110px;
+    /* border: 1px solid saddlebrown;   */
+
+}
+
+.feedback_images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.first, .second, .third {
+    display: flex;
+    max-width: 350px;
+    max-height: 350px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.first, .second, .third p,h5{
+    font-size: 14px;
+    color: #a6a6a6;
+    font-family: var(--m400);
+    font-weight: 400;
+}
+.feedback_images h5{
+    margin: 23px 0;
+    font-size: 16px;
+}
+
+.footer{
+    width: 100%;
+    /* border: 1px solid yellow; */
+    min-height: 200px;
+    background: black;
+}
+
+.footer_contant{
+    max-width: 1110px;
+    margin: 50px  auto;
+    display: flex;
+}
+
+.footer_info{
+    width: 100%;
+    /* border: 1px solid seagreen; */
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer_info p{
+    font-size: 14px;
+    color: #a6a6a6;
+    font-family: var(--m400);
+    font-weight: 400;
+}
 @media(max-width: 1024px){
     .section_content{
         flex-direction: column;
         align-items: center;
         text-align: justify;
+        padding: 0 10px;
+    
+    }
+    .main_menu{
+        justify-content: center;
+    }
+    .pizza_cost{
+        width: 70%;
+        justify-content: center;
+    }
+
+    .section_content h2{
+        text-align: center;
+    }
+
+    .signature img{
+        margin: -12px 0px -80px 100px;
+    }
+    .feedback_images{
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .feedback_images img{
+        object-fit: cover;
+    }
+  
+    .feedback{
+        display: flex;
+    }
+
+    .first, .second, .third{
+        margin-bottom: 20px;
+    }
+
+    .img_first{
+        order: 0;
+    }
+    .img_second{
+        order: 3;
+    }
+
+    .img_third{
+        order: 1;
+    }
+    .first{
+        order: 2;
+    }
+
+    .second{
+        order: 10 ;
+    }
+    .feedback{
+        justify-content: center;
     }
 }
 @media(max-width: 768px){
     .menu{
         flex-direction: column;
     }
+
     .menu_links{
         flex-direction: column;
-        
     }
+
     .menu_links a{
         margin-top: 10px;
         padding: 18px 27px 20px 37px;
@@ -178,11 +378,55 @@
      .menu_links span{
         padding: 10px 0px 0 0;
      }
+
      .container_content{
          margin: 100px 0 200px 0;
      }
+     
+     .main_menu{
+         justify-content: center;
+     }
 
+     .pizza_info{
+         flex-direction: column;
+        align-items: center;
+     }
+
+     .pizza_info img{
+        object-fit:cover;
+     }
+
+     .pizza_cost a{
+         margin-top: 10px;
+     }
+     
+     .pizza_info span{
+        margin: 30px 0 0 -240px;
+     }
+
+     .pizza_info-inside{
+        margin: 0 auto;
+     }
+
+     .content_info p:nth-of-type(1) {
+        margin-top: 25px;
     }
-@media(max-width: 576px){}
-@media(max-width: 480px){}
-@media(max-width: 320px){}
+
+    .feedback_images{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .feedback_text{
+       
+        justify-content: space-around;
+        
+    }
+}
+@media(max-width: 480px){
+    .signature img{
+        margin: -12px 0px -80px 0;
+    }
+}
